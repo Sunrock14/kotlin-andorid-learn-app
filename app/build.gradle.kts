@@ -7,6 +7,9 @@ android {
     namespace = "com.farukkocademir.mylearnapp"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.farukkocademir.mylearnapp"
         minSdk = 24

@@ -1,5 +1,6 @@
 package com.farukkocademir.mylearnapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -7,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent as Intent1
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         forLoop()
         whileLoop()
         changeViewText()
-
-
+        var ferrari = Cars("ferrari","enzo",2024,"otomatic", "petrol",1000)
+        println(ferrari)
     }
     fun variables(){
 
@@ -320,12 +322,36 @@ class MainActivity : AppCompatActivity() {
         textView.text = changeResult().toString()
     }
     fun submitResult(view: View){
+        textView.text = "tıklandı";
+    }
 
+    fun nullability(){
+        var myString : String? = null
+        var myValue : Int? = null
+
+
+        //!! : Null gelmeyecek
+        //? : Null gelme ihtimali var
+        //Elvis operator : Null ise 0 ata
+        println(myValue!! * 10)
+        println(myValue?.minus(10))
+        println(myValue?.minus(10) ?: 0) //?: 0 ise 0 yaz
+        myValue.let {
+            println("null değildi")
+        }
+    }
+    
+    fun Person(view: View){
+        val intent = Intent(this@MainActivity,A01Person::class.java)
+        startActivity(intent)
+    }
+    fun Second(view: View){
+        val intent = Intent(this@MainActivity,A02Calculator::class.java)
+        startActivity(intent)
+    }
+    fun ThirdFunc(view : View){
+        var intent = Intent(this@MainActivity,A03DataStorage::class.java)
+        startActivity(intent)
     }
 }
-
-class Learn {
-
-}
-
 

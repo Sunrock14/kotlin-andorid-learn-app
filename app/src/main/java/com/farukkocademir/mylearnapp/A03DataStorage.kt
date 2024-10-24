@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.farukkocademir.mylearnapp.databinding.ActivityA03DataStorageBinding
 
 class A03DataStorage : AppCompatActivity() {
-
+//
     private lateinit var binding: ActivityA03DataStorageBinding
     //SharedPreferences Key - Value
     //Kısa süreli verileri saklamamızı sağlar

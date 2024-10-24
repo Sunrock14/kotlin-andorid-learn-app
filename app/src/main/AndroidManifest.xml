@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MyLearnApp"
         tools:targetApi="31">
         <activity
+            android:name=".A00Kotlin"
+            android:exported="false" />
+        <activity
+            android:name=".A04AlertMessage"
+            android:exported="false" />
+        <activity
             android:name=".A03DataStorage"
             android:exported="false" />
         <activity

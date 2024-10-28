@@ -22,7 +22,7 @@ class A03DataStorage : AppCompatActivity() {
 
         binding = ActivityA03DataStorageBinding.inflate(layoutInflater)
         sharedData = this.getSharedPreferences("com.farukkocademir.mylearnapp", MODE_PRIVATE)
-
+        binding.randomText.text = sharedData.getString("data", "defaultValue");
         setContentView(binding.root)
     }
     fun Save(view : View)

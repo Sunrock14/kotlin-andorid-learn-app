@@ -22,7 +22,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="16dp"
         android:onClick="Second"
         android:text="basics2"
@@ -31,13 +31,15 @@
 
     <Button
         android:id="@+id/Third"
-        android:layout_width="388dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="11dp"
         android:layout_marginBottom="60dp"
         android:onClick="ThirdFunc"
         android:text="Shared Preferences - Cache Bellek - Cookie"
-        app:layout_constraintBottom_toBottomOf="@+id/button14"
+        app:layout_constraintBottom_toBottomOf="@+id/button20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button" />
@@ -47,22 +49,35 @@
         android:layout_width="0dp"
         android:layout_height="59dp"
         android:layout_marginStart="3dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="5dp"
         android:onClick="FourFunc"
         android:text="Context ve Alert Diyalog"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button14"
         app:layout_constraintEnd_toStartOf="@+id/button14"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="78dp"
-        android:layout_marginEnd="138dp"
-        android:text="Button"
+        android:layout_marginEnd="12dp"
+        android:onClick="FuncCountDown"
+        android:text="countdown"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button7"
+        app:layout_constraintEnd_toStartOf="@+id/button20"
+        app:layout_constraintStart_toEndOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="FuncKronometre"
+        android:text="Kronometre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/button14"
+        app:layout_constraintTop_toTopOf="@+id/button14" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
